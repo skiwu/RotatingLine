@@ -1,4 +1,49 @@
 
 public class Line {
+	
+	private int radius;
+	private double angle;
+	
+	public int getRadius() {
+		return radius;
+	}
 
+	public void setRadius(int radius) {
+		this.radius = radius;
+	}
+
+	public double getAngle() {
+		return angle;
+	}
+
+	public void setAngle(double angle) {
+		this.angle = angle;
+	}
+	
+	
+	public Line() {
+		radius = 100;
+		angle = 0;
+	}
+	
+	public int xcalc() {
+		angle += 1;
+		double x = radius * Math.cos(angle); 
+		return (int)x;
+	}
+
+	public int ycalc() {
+		double y = radius * Math.sin(angle);
+		return (int)y;
+	}
+	
+	public static void main(String[] args) {
+		
+		
+		
+		
+		
+	}
+	
+	
 }
