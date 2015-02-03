@@ -7,27 +7,23 @@ public class Line {
 	public int getRadius() {
 		return radius;
 	}
-
 	public void setRadius(int radius) {
 		this.radius = radius;
 	}
-
 	public double getAngle() {
 		return angle;
 	}
-
 	public void setAngle(double angle) {
 		this.angle = angle;
 	}
 	
-	
 	public Line() {
-		radius = 100;
+		radius = 150;
 		angle = 0;
 	}
 	
 	public int xcalc() {
-		angle += 1;
+		angle += Math.PI/100;
 		double x = radius * Math.cos(angle); 
 		return (int)x;
 	}
@@ -39,7 +35,31 @@ public class Line {
 	
 	public static void main(String[] args) {
 		
+		Line a = new Line();
 		
+		System.out.println(a.getAngle());
+		
+		System.out.println(a.xcalc());
+		System.out.println(a.ycalc());
+		System.out.println(a.getAngle());
+		
+		System.out.println(a.xcalc());
+		System.out.println(a.ycalc());
+		System.out.println(a.getAngle());
+		
+		System.out.println(a.xcalc());
+		System.out.println(a.ycalc());
+		System.out.println(a.getAngle());
+		
+		System.out.println(a.xcalc());
+		System.out.println(a.ycalc());
+		System.out.println(a.getAngle());
+		System.out.println(a.xcalc());
+		System.out.println(a.ycalc());
+		System.out.println(a.getAngle());
+		System.out.println(a.xcalc());
+		System.out.println(a.ycalc());
+		System.out.println(a.getAngle());
 		
 		
 		
